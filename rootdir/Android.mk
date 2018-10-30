@@ -34,6 +34,7 @@ LOCAL_SRC_FILES    := init.qcom.sh
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
+<<<<<<< HEAD
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.target.rc
 LOCAL_MODULE_TAGS  := optional eng
@@ -79,4 +80,12 @@ LOCAL_UNSTRIPPED_PATH := $(TARGET_ROOT_OUT_SBIN_UNSTRIPPED)
 LOCAL_SRC_FILES       := sbin/chargeonlymode
 LOCAL_MODULE_TAGS     := optional
 LOCAL_MODULE_CLASS    := EXECUTABLES
+
+#Include Zucc init
+include $(CLEAR_VARS)
+LOCAL_MODULE       := init.zuc.rc
+LOCAL_MODULE_TAGS  := optional eng
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := init.zuc.rc
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
