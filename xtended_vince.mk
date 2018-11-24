@@ -22,17 +22,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common CypherOS stuff.
+# Inherit some common Xtended stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/aoscp/configs/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := aoscp_vince
+PRODUCT_NAME := xtended_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
+
+#Official
+XTENDED_BUILD_TYPE := OFFICIAL
 
 # Set model via checking product region
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
