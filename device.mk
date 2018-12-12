@@ -122,14 +122,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
 
+<<<<<<< HEAD:device.mk
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# Doze mode
+# Xiaomi Shit
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    XiaomiShit
 
 # Display
 PRODUCT_PACKAGES += \
