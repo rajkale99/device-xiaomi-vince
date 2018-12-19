@@ -1,1 +1,1 @@
-add_lunch_combo xtended_vince-userdebug
+add_lunch_combo revengeos_vince-userdebug

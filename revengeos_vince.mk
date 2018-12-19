@@ -1,4 +1,4 @@
-# 
+#
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,11 +24,14 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common Xtended stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+$(call inherit-product, vendor/revengeos/config/common.mk)
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := xtended_vince
+PRODUCT_NAME := revengeos_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
