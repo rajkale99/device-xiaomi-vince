@@ -25,9 +25,13 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Inherit some common Xtended stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/revengeos/config/common.mk)
+IS_PHONE := true
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
+
+#Gcam
+TARGET_USE_GCAM := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
@@ -38,7 +42,7 @@ TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
 
 #Official
-XTENDED_BUILD_TYPE := OFFICIAL
+REVENGEOS_BUILD_TYPE := OFFICIAL
 
 # Set model via checking product region
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
